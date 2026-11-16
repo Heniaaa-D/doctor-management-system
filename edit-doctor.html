@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Doctor</title>
+  </head>
+  <body>
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link href="output.css" rel="stylesheet" />
+        <link href="input.css" rel="stylesheet" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+      </head>
+      <body>
+        <div
+          class="flex bg-dark-green xl:px-24 lg:px-20 md:px-16 px-10 py-4 justify-between gap-10 items-center"
+        >
+          <div class="flex gap-10">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.8"
+                d="M12 0V24"
+                stroke="#F4FFF3"
+                stroke-width="8"
+                stroke-miterlimit="10"
+              />
+              <path
+                opacity="0.6"
+                d="M0 12H24"
+                stroke="#F4FFF3"
+                stroke-width="8"
+                stroke-miterlimit="10"
+              />
+            </svg>
+            <p
+              class="text-green-lite font-semibold font-poppins lg:text-base md:text-[12px] md:flex hidden"
+            >
+              Users
+            </p>
+            <p
+              class="text-green-lite font-semibold font-poppins lg:text-base md:text-[12px] md:flex hidden"
+            >
+              Patients
+            </p>
+            <p
+              class="text-green-lite font-semibold font-poppins lg:text-base md:text-[12px] md:flex hidden"
+            >
+              Hospitals
+            </p>
+            <p
+              class="text-green-lite font-semibold font-poppins lg:text-base md:text-[12px] md:flex hidden"
+            >
+              Notice
+            </p>
+            <p
+              class="text-green-lite font-semibold font-poppins lg:text-base md:text-[12px] md:flex hidden"
+            >
+              Help Center
+            </p>
+          </div>
+          <div class="flex gap-6 items-center">
+            <svg
+              width="29"
+              height="29"
+              viewBox="0 0 29 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="4.83328"
+                y="4.83337"
+                width="8.45833"
+                height="8.45833"
+                rx="1.5"
+                fill="white"
+              />
+              <path
+                opacity="0.3"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15.7083 6.33337C15.7083 5.50495 16.3799 4.83337 17.2083 4.83337H22.6666C23.495 4.83337 24.1666 5.50495 24.1666 6.33337V11.7917C24.1666 12.6201 23.495 13.2917 22.6666 13.2917H17.2083C16.3799 13.2917 15.7083 12.6201 15.7083 11.7917V6.33337ZM4.83328 17.2084C4.83328 16.3799 5.50486 15.7084 6.33328 15.7084H11.7916C12.62 15.7084 13.2916 16.3799 13.2916 17.2084V22.6667C13.2916 23.4951 12.62 24.1667 11.7916 24.1667H6.33328C5.50486 24.1667 4.83328 23.4951 4.83328 22.6667V17.2084ZM17.2083 15.7084C16.3799 15.7084 15.7083 16.3799 15.7083 17.2084V22.6667C15.7083 23.4951 16.3799 24.1667 17.2083 24.1667H22.6666C23.495 24.1667 24.1666 23.4951 24.1666 22.6667V17.2084C24.1666 16.3799 23.495 15.7084 22.6666 15.7084H17.2083Z"
+                fill="white"
+              />
+            </svg>
+            <svg
+              width="29"
+              height="28"
+              viewBox="0 0 29 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                opacity="0.3"
+                x="15.7083"
+                y="4.51947"
+                width="3.625"
+                height="18.0779"
+                rx="1.8125"
+                fill="white"
+              />
+              <rect
+                x="9.66669"
+                y="10.1688"
+                width="3.625"
+                height="12.4286"
+                rx="1.8125"
+                fill="white"
+              />
+              <rect
+                x="21.75"
+                y="12.4285"
+                width="3.625"
+                height="10.1688"
+                rx="1.8125"
+                fill="white"
+              />
+              <rect
+                x="3.625"
+                y="14.6884"
+                width="3.625"
+                height="7.90909"
+                rx="1.8125"
+                fill="white"
+              />
+            </svg>
+            <svg
+              width="25"
+              height="23"
+              viewBox="0 0 25 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M23.1454 17.0574C23.4678 17.3477 23.9816 17.1176 23.9798 16.6838L23.9624 12.2862V5.18092C23.9624 3.87288 22.7842 2.8125 21.3309 2.8125H9.05016C7.59678 2.8125 6.41858 3.87288 6.41858 5.18092V8.4375H13.6667C15.3235 8.4375 16.6667 9.78064 16.6667 11.4375V14.6546H20.4755L23.1454 17.0574Z"
+                fill="white"
+              />
+              <path
+                opacity="0.3"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M2.06778 16.875V12.1875C2.06778 11.152 3.00052 10.3125 4.15111 10.3125H12.4844C13.635 10.3125 14.5678 11.152 14.5678 12.1875V16.875C14.5678 17.9105 13.635 18.75 12.4844 18.75H4.27167L2.92135 19.9132C2.59726 20.1924 2.09502 19.9621 2.09502 19.5344V17.179C2.0771 17.08 2.06778 16.9785 2.06778 16.875ZM6.25001 13.5937C6.25001 13.3349 6.45987 13.125 6.71876 13.125H12.0313C12.2901 13.125 12.5 13.3349 12.5 13.5937C12.5 13.8526 12.2901 14.0625 12.0313 14.0625H6.71876C6.45987 14.0625 6.25001 13.8526 6.25001 13.5937ZM9.84375 15C9.58487 15 9.37501 15.2099 9.37501 15.4688C9.37501 15.7276 9.58487 15.9375 9.84375 15.9375H12.0313C12.2901 15.9375 12.5 15.7276 12.5 15.4688C12.5 15.2099 12.2901 15 12.0313 15H9.84375Z"
+                fill="white"
+              />
+            </svg>
+            <div class="flex gap-3.5 items-center">
+              <div class="flex flex-col">
+                <p
+                  class="font-poppins text-green-lite font-semibold text-[12px]"
+                >
+                  Marvin McKinney
+                </p>
+                <p class="text-green-lite font-poppins font-light text-[12px]">
+                  Admin
+                </p>
+              </div>
+              <div
+                class="w-10 h-10 flex items-center justify-center bg-dark-green-100 text-white text-[20px] rounded-md"
+              >
+                M
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex bg-white pl-32 py-7 items-center gap-6">
+          <a href="doctors-list.html">
+            <i class="fa-solid fa-arrow-left text-grey"></i
+          ></a>
+          <p class="text-grey text-[14px] font-semibold font-poppins">Doctor</p>
+          <div class="w-1.5 h-1.5 rounded-xs bg-grey"></div>
+          <p class="text-grey text-[14px] font-semibold font-poppins">
+            Edit doctor
+          </p>
+        </div>
+        <div class="bg-grey-lite xl:px-52 lg:px-44 md:px-36 py-12">
+          <div
+            class="bg-white flex flex-col items-center md:px-20 px-10 py-14 gap-7"
+          >
+            <p class="text-[20px] font-light">Edit Doctor</p>
+
+            <div class="flex flex-col gap-1.5 items-center">
+              <div class="flex justify-between">
+                <div class="flex flex-col items-center gap-3">
+                  <label class="text-[13px]">Doctor Photo</label>
+
+                  <div
+                    id="imageBox"
+                    class="relative w-28 h-28 rounded-full border overflow-hidden group"
+                  >
+                    <img
+                      id="doctorPreview"
+                      class="hidden w-full h-full object-cover"
+                    />
+
+                    <label
+                      id="uploadLabelEmpty"
+                      for="doctorImage"
+                      class="absolute inset-0 flex items-center justify-center text-3xl text-gray-500 bg-gray-100"
+                    >
+                      +
+                    </label>
+
+                    <label
+                      id="uploadLabelHover"
+                      for="doctorImage"
+                      class="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition"
+                    >
+                      <span class="text-white text-3xl">+</span>
+                    </label>
+
+                    <input
+                      id="doctorImage"
+                      type="file"
+                      accept="image/*"
+                      class="hidden"
+                    />
+                  </div>
+                </div>
+                <label class="text-red-600 image hidden">*</label>
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-x-6 gap-y-4 w-full">
+              <div class="flex flex-col gap-1.5">
+                <div class="flex justify-between">
+                  <label class="text-[13px] font-[400px]">First name</label>
+                  <label class="text-red-600 name hidden">*</label>
+                </div>
+                <input
+                  class="border border-grey text-[13px] font-light px-6 py-2.5 doctors-name input"
+                  placeholder="Your first name"
+                  data-category="input"
+                />
+              </div>
+
+              <div class="flex flex-col gap-1.5">
+                <div class="flex justify-between">
+                  <label class="text-[13px] font-[400px]">Last name</label>
+                  <label class="text-red-600 Lname hidden">*</label>
+                </div>
+                <input
+                  class="border border-grey text-[13px] font-light px-6 py-2.5 doctors-lastname input"
+                  placeholder="Your last name"
+                  data-category="input"
+                />
+              </div>
+
+              <div class="flex flex-col gap-1.5">
+                <div class="flex justify-between">
+                  <label class="text-[13px] font-[400px]">Email address</label>
+                  <label class="text-red-600 email hidden">*</label>
+                </div>
+
+                <input
+                  class="border border-grey text-[13px] font-light px-6 py-2.5 doctors-email-address input"
+                  placeholder="Your email address"
+                  type="email"
+                  required
+                  data-category="input"
+                />
+              </div>
+              <div class="flex flex-col gap-1.5">
+                <div class="flex justify-between">
+                  <label class="text-[13px] font-[400px]">Phone number</label>
+                  <label class="text-red-600 phoneN hidden">*</label>
+                </div>
+                <input
+                  class="border border-grey text-[13px] font-light px-6 py-2.5 doctors-phone-number input"
+                  placeholder="Your phone number"
+                  type="number"
+                  data-category="input"
+                />
+              </div>
+              <div class="flex flex-col gap-1.5">
+                <div class="flex justify-between">
+                  <label class="text-[13px] font-[400px]">Specialty</label>
+                  <label class="text-red-600 specialty hidden">*</label>
+                </div>
+                <select
+                  name="specialization"
+                  id="specialization"
+                  data-category="input"
+                  class="border border-grey input text-[13px] font-light px-6 py-2.5 doctors-specialty"
+                >
+                  <option disabled selected value class="font-[400px]">
+                    Your specialization
+                  </option>
+                  <option>Dermatologists</option>
+                  <option>Infectious disease</option>
+                  <option>Ophthalmologists</option>
+                  <otpin> Cardiologists</otpin>
+                </select>
+              </div>
+
+              <div class="flex flex-col gap-1.5">
+                <div class="flex justify-between">
+                  <label class="text-[13px] font-[400px]">Status</label>
+                  <label class="text-red-600 status hidden">*</label>
+                </div>
+                <select
+                  name="specialization"
+                  data-category="input"
+                  id="specialization"
+                  class="border border-grey input text-[13px] font-light px-6 py-2.5 doctors-status"
+                >
+                  <option disabled selected value class="font-[400px]">
+                    Your status
+                  </option>
+                  <option class="text-green" data-category="approved">
+                    Approved
+                  </option>
+                  <option class="text-watermelon" data-category="declined">
+                    Declined
+                  </option>
+                </select>
+              </div>
+              <p
+                class="text-red-600 font-semibold hidden fill-out-fields text-[12px]"
+              >
+                Please fill out this fields!
+              </p>
+            </div>
+            <button
+              class="bg-green rounded-sm px-10 py-2 text-white text-[13px] font-semibold edit-doctor-button cursor-pointer"
+            >
+              Edit
+            </button>
+          </div>
+        </div>
+        <script src="edit-doctor.js"></script>
+      </body>
+    </html>
+  </body>
+</html>

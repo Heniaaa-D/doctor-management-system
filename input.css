@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@theme {
+  --color-green: #5f8d4e;
+  --color-dark-green: #285430;
+  --color-green-lite: #f4fff3;
+  --color-dark-green-100: #456b50;
+  --color-grey: #c9c9c9;
+  --color-grey-lite: #fafafa;
+  --color-gray-muted: #b5b5c3;
+  --color-midnight-gray: #464e5f;
+  --color-watermelon: #f64e60;
+  --font-poppins: "Poppins", sans-serif;
+  --color-blush-pink: #ffe2e5;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.dermatologist {
+  background-color: #16a34a;
+  color: white;
+}
+
+.infectious-diseas {
+  background-color: #2563eb;
+  color: white;
+}
+
+.ophthalmologists {
+  background-color: #9333ea;
+  color: white;
+}
+
+.cardiologists {
+  background-color: #ef4444;
+  color: white;
+}
+
+.active[data-category="approved"] {
+  background: #f4fff3;
+  color: #5f8d4e;
+}
+
+.redStatus {
+  background: #ffe2e5;
+  color: #f64e60;
+}
+
+.active[data-category="input"] {
+  border: 2px solid red !important;
+}
+
+.border-error {
+  border: 2px solid red !important;
+}
